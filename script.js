@@ -1,10 +1,12 @@
 $(document).ready(function() {
-    $(".content").first().addClass("visible")
-    $(window).on("scroll", function() {
-        $(".content").each(function() {
-            if ($(this).offset().top < $(window).scrollTop() + $(window).height() * 0.9) {
-                $(this).addClass("visible");
-            }
-        });
-    });
-});
+    /*Setter opp lys/mørk modus fra enhetsinnstillinger*/
+    if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+        $("body").addClass("light-mode")
+    }
+})
+
+function toggle_theme() {
+    $('body').toggleClass('light-mode')
+}
+
+$("#toggle-button").click(toggle_theme)
