@@ -1,7 +1,9 @@
 :root {
     --background-color: #121212;
     --color: white;
-    --highlight-color: #3d3d3d;
+    --element-background: #121212a8;
+    --highlight-color: #3d3d3d62;
+    --footer-color: #999;
 }
 
 html {
@@ -22,25 +24,11 @@ body {
 }
 
 body.light-mode {
+    background-image: none;
     --background-color: white;
+    --element-background: #ffffff00;
     --color: #121212;
     --highlight-color: #dbdbdb;
-}
-
-.section {
-    color: var(--color);
-    flex: 1;
-    margin: 1rem;
-    padding: 3rem;
-    width: 66%;
-    border: 1px dotted var(--color);
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-.section:hover {
-    background-color: var(--highlight-color);
-    cursor: pointer;
 }
 
 .toggle-button {
@@ -54,9 +42,36 @@ body.light-mode {
     cursor: pointer;
 }
 
+.section {
+    color: var(--color);
+    background-color: var(--element-background);
+    flex: 1;
+    margin: 1rem;
+    padding: 2rem;
+    width: 33%;
+    border: 1px solid var(--color);
+    text-decoration: none;
+}
+
+.section p {
+    font-size: 0.8rem;
+}
+
+.section:hover {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+}
+
 @media (max-width: 800px) {
-    .content {
-        flex: 1 1 100%;
+    .section {
+        width: 66%;
     }
 }
 
