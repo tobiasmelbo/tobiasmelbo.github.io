@@ -1,9 +1,9 @@
 :root {
-    --background-color: #121212;
-    --color: white;
-    --element-background: #121212a8;
-    --highlight-color: #25252557;
-    --footer-color: #999;
+    --background-color: #1e1e2e;
+    --color: #cdd6f4;
+    --element-background: #1e1e2ea8;
+    --highlight-color: #313244;
+    --footer-color: #bac2de;
 }
 
 html {
@@ -26,10 +26,10 @@ body {
 
 body.light-mode {
     background-image: none;
-    --background-color: white;
+    --background-color: #eff1f5;
     --element-background: #ffffff00;
-    --color: #121212;
-    --highlight-color: #dbdbdb;
+    --color: #4c4f69;
+    --highlight-color: #ccd0da;
 }
 
 .toggle-button {
@@ -77,7 +77,7 @@ footer {
     padding: 1em;
     text-align: center;
     font-size: 1rem;
-    color: #999;
+    color: var(--footer-color);
 }
 
 @media (max-width: 800px) {
