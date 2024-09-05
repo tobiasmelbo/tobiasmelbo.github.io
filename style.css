@@ -1,7 +1,7 @@
 :root {
-    --background-color: #11111b;
+    --background-color: #1e1e2e;
     --color: #cdd6f4;
-    --element-background: #1e1e2e49;
+    --element-background: #31324421;
     --highlight-color: #313244;
     --footer-color: #bac2de;
 }
@@ -26,8 +26,8 @@ body {
 
 body.light-mode {
     background-image: none;
-    --background-color: #dce0e8;
-    --element-background: #ffffff00;
+    --background-color: #eff1f5;
+    --element-background: #ccd0da36;
     --color: #4c4f69;
     --highlight-color: #ccd0da;
 }
