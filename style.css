@@ -49,9 +49,10 @@ body.light-mode {
     flex: 1;
     margin: 1rem;
     padding: 2rem;
-    width: 33%;
+    width: 60%;
     border-radius: 5px;
     text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .section:first-of-type {
@@ -72,11 +73,16 @@ body.light-mode {
     cursor: pointer;
 }
 
+
 footer {
     margin-top: 5%;
     padding: 1em;
     text-align: center;
     font-size: 1rem;
+    color: var(--footer-color);
+}
+
+footer a {
     color: var(--footer-color);
 }
 
